@@ -7,10 +7,14 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
+    }
+    plugins {
+        id("org.jetbrains.kotlin.android") version "1.9.23"
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -21,4 +25,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ex2"
 include(":app")
- 
